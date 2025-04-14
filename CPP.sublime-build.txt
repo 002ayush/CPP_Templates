@@ -1,0 +1,12 @@
+{
+    "cmd": ["g++", "-DMISHRA_11", "-std=c++17", "${file}", "-o", "${file_path}/${file_base_name}", "&&", "${file_path}/${file_base_name}"],
+    "selector": "source.c++",
+    "shell": true,
+    "working_dir": "${file_path}",
+    "variants": [
+        {
+            "name": "Online Judge Mode",
+            "cmd": ["g++", "-std=c++17", "${file}", "-o", "${file_path}/${file_base_name}", "&&", "${file_path}/${file_base_name}"]
+        }
+    ]
+}

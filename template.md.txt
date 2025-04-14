@@ -1,0 +1,138 @@
+/* JAI MERE KHATU SHYAM */
+#include <bits/stdc++.h>
+// #include <ext/pb_ds/assoc_container.hpp>
+// #include <ext/pb_ds/tree_policy.hpp>
+
+#include<thread>
+#include<chrono>
+
+using namespace std;
+// using namespace __gnu_pbds;
+
+
+
+
+#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define MOD 1000000007
+#define INF 1e18
+#define pb push_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define PI 3.14159
+#define all(v) v.begin(),v.end()
+
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef long double lld;
+// typedef tree <
+// int,                          // Key type (int)
+// null_type,                    // Mapped type (null for set) (int for map)
+// less<int>,                    // Comparison (ascending order) (for duplicates less_equal)
+// rb_tree_tag,                  // Underlying tree (Red-Black Tree) can use splay_tree,ordered_vector tree as well
+// tree_order_statistics_node_update // Policy for order statistics
+// > ordered_set;
+
+// File handling for local debugging
+void stdInputOutput() {
+#ifndef ONLINE_JUDGE
+
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	freopen("error.txt", "w", stderr);
+#endif
+}
+
+// Debugging Functions
+template <typename T>
+void _print(T x) { cerr << x; }
+
+template <typename T, typename V>
+void _print(pair<T, V> p) { cerr << "{"; _print(p.ff); cerr << ","; _print(p.ss); cerr << "}"; }
+
+template <typename T>
+void _print(vector<T> v) { cerr << "["; for (auto i : v) { _print(i); cerr << " "; } cerr << "]"; }
+
+template <typename T>
+void _print(set<T> v) { cerr << "{"; for (auto i : v) { _print(i); cerr << " "; } cerr << "}"; }
+
+template <typename T>
+void _print(multiset<T> v) { cerr << "{{"; for (auto i : v) { _print(i); cerr << " "; } cerr << "}}"; }
+
+template <typename T, typename V>
+void _print(map<T, V> v) { cerr << "["; for (auto i : v) { cerr << "{"; _print(i.ff); cerr << ":"; _print(i.ss); cerr << "} "; } cerr << "]"; }
+
+// Variadic Debug Function
+//This is the variadic debug function which takes variable no of arguments...
+#ifdef MISHRA_11
+#define debug(x...) cerr << "[" << #x << "] = "; _print_all(x); cerr << endl;
+#else
+#define debug(x...)
+#endif
+
+void _print_all() { cerr << endl; } // Base case for recursion
+
+template <typename T, typename... Args>
+void _print_all(T first, Args... rest) {
+	_print(first);
+	if (sizeof...(rest)) cerr << ", ";
+	_print_all(rest...);
+}
+
+template<typename T>
+void inputv(vector<T>& v1) {
+	for (T& ele : v1) {
+		cin >> ele;
+	}
+}
+
+
+// For interactive problems
+ll query(int l, int r) {
+	cout << "? " << l << " " << r << endl;
+	ll x;
+	cin >> x;
+	return x;
+
+}
+
+void solve() {
+
+
+	
+}
+
+
+
+int32_t main() {
+	stdInputOutput();
+	// Comment the below line "fastio" when solving the interactive problems...
+	// fastio;
+	/*
+		1) Try to solve question until you don't find the solution
+		2) Don't waste more than 30 minutes to a problem look to the editorial for solution
+	*/
+	auto start = chrono::high_resolution_clock::now();
+
+	cout << fixed << setprecision(10);
+	ll tc;
+	cin >> tc;
+
+	while (tc--)
+	{
+
+		solve();
+	}
+
+	// solve();
+	auto end = chrono::high_resolution_clock::now();
+
+	chrono::duration<double> duration = chrono::duration_cast<chrono::duration<double>>(end - start);
+	auto executionTime = duration.count();
+	debug(executionTime);
+
+
+
+	return 0;
+}
